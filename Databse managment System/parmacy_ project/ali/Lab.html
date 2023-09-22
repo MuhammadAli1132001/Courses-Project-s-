@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="lab.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="sub-container">
+            <div class="form-container">
+                <form id="labtest">
+                    <p>1. Your Contact Details</p>
+                    <input type="text" placeholder="Full Name" class="text-input">
+                    <input type="text" placeholder="Patient ID if exists" class="text-input">
+                    <input type="number" placeholder="Contact Number" class="text-input">
+                    <input type="email" placeholder="Email ID" class="text-input">
+                    <p>2. Address</p>
+                    <input type="text" placeholder="House Number" class="text-input">
+                    <input type="text" placeholder="Street" class="text-input">
+                    <input type="text" placeholder="Area" class="text-input">
+                    <section>
+                        <label for="district">Choose District: </label>
+                        <select id="district">
+                            <option>Choose</option>
+                            <option>Peshawar</option>
+                            <option>Lahore</option>
+                            <option>Islamabad</option>
+                            <option>kharachi</option>
+                            <option>balochistan</option>
+                        </select>
+                    </section>
+                    <p>3. Test Type</p>
+                    <section>
+                        <input type="checkbox" id="check1" checked>
+                        <label for="check1">CBC</label>
+                    </section>
+                    <section>
+                        <input type="checkbox" id="check2">
+                        <label for="check2">Complete Urine</label>
+                    </section>
+                    <section>
+                        <input type="checkbox" id="check3">
+                        <label for="check3">Lipid Profile</label>
+                    </section>
+                    <section>
+                        <input type="checkbox" id="check4">
+                        <label for="check4">Thyroid Stimulating Hormone(TSH)</label>
+                    </section>
+                    <section>
+                        <input type="checkbox" id="check5">
+                        <label for="check5">Glucose Test</label>
+                    </section>
+                    <p>4. Hard Copy Required?</p>
+                    <section>
+                        <input type="radio" id="yes" name="copyRequired" checked>
+                        <label for="yes">Yes</label>
+                    </section>
+                    <section>
+                        <input type="radio" id="no" name="copyRequired">
+                        <label for="no">No</label>
+                    </section>
+                    <p>5. Select Date And Time</p>
+                    <section>
+                        <label for="date-select">Date: </label>
+                        <input type="date" id="date-select">
+                    </section>
+                    <section>
+                        <label for="time-select">Time: </label>
+                        <input type="time" id="time-select">
+                    </section>
+                </form>
+            </div>
+            <div class="image-container"></div>
+        </div>
+        <div class="form-controls">
+            <input type="submit" class="control" form="labtest">
+            <input type="reset" class="control" form="labtest">
+        </div>
+    </div>
+</body>
+
+</html>

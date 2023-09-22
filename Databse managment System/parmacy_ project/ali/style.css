@@ -1,0 +1,176 @@
+header{
+    font-weight: bolder;
+    color: green(255, 255, 255);
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+footer{
+    margin-top: 20px;
+    background-color: black;
+    color: yellow;
+    font-size: 16px;
+    padding: 10px;
+    position: relative;
+    bottom: 0%;
+    text-align: center;
+}
+#navigate{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+.menu{
+    margin: 0%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.menu li a{
+    color: yellow;
+    font-size: 50px;
+    text-decoration: none;
+}
+.menu li{
+    padding: 10px;
+    display: inline-block;
+}
+.menu li:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: dodgerblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+.dropdown-content a:hover {
+        background-color: lightgray;
+    }
+ 
+    @keyframes example {
+        0% {background-image: url("Images/Animation/ani1.jpg");}
+        20% {background-image: url("Images/Animation/ani3.jpg");}
+        40% {background-image: url("Images/Animation/ani4.jpg");}
+        60% {background-image: url("Images/Animation/ani5.jpg");}
+        80% {background-image: url("Images/Animation/ani1.jpg");}
+      }
+    
+    #image-animation {
+        background-image: url("../Images/Animation/ani1.jpg");
+        height: 500px;
+        object-fit:fill;
+        border: 2px solid steelblue;
+        background-size: 100% 100%;
+        animation-name: example;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+    }
+    
+    .container{
+        display: inline-block;
+        background-color: rgba(111, 211, 126);
+        position: relative;
+        margin: 10px;
+        padding : 10px;
+        height : 190px;
+        width: 250px;
+        box-shadow: 5px 5px rgb(140, 135, 135);
+        border-radius: 5px;
+    }
+    
+    .container:hover{
+        height : 200px;
+        width: 300px;
+        /*z-index: 10;*/
+    }
+    
+    .product{
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .price{
+        color: red;
+        margin: 5px;
+    }
+    
+    .image{
+        height: 50%;
+        width: 100%;
+        background-size: 100% 100%;
+        margin-bottom: 10px;
+    }
+    
+    #one{
+        background-image: url("Images/Products/c1.jpg");
+    }
+    
+    #two{
+        background-image: url("Images/Products/c2.jpg");
+    }
+    
+    #three{
+        background-image: url("Images/Products/c3.jpg");
+    }
+    
+    #four{
+        background-image: url("Images/Products/c4.jpg");
+    }
+    
+    #five{
+        background-image: url("Images/Products/d1.jpg");
+    }
+    
+    #six{
+        background-image: url("Images/Products/d2.jpg");
+    }
+    
+    #seven{
+        background-image: url("Images/Products/d3.jpg");
+    }
+    
+    #eight{
+        background-image: url("Images/Products/d4.png");
+    }
+    
+    .add{
+        text-align: center;
+        border: blue solid 2px;
+        margin: 10px;
+        background-color: hsl(111, 112, 113);
+        font-size: large; 
+        padding: 5px; 
+        color: hsl(233, 231, 200);
+        border-radius: 100px;
+    }
+    
+    .add:active{
+        background-color: rgb(250, 234, 230);
+        border: rgb(10, 255, 76) solid 2px;
+        color: orange;
+    }
+    
+    .add:hover{
+        cursor: pointer;
+        background-color: yellow;
+    }
